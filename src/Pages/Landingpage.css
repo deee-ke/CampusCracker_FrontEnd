@@ -1,0 +1,13 @@
+.desc-btn button{
+    background-color: #382F26;
+    color: #FFEFCD;
+    font-size: 20px;
+    
+}
+.desc-btn button:hover{
+    color: #382F26;
+    background-color: #FFEFCD;
+}
+.linkline,.titllink{
+    text-decoration: none;
+}

@@ -17,6 +17,8 @@ import PoTFormulas from './SubTopics/PoTFormulas';
 import GeneralExam from './Exams/GeneralExam';
 import GeneralQns from './SubTopics/GeneralQns';
 import Result from './Exams/Result';
+import UserControls from './Pages/UserControls';
+import ManageAccount from './Pages/ManageAccount';
 
 
 
@@ -48,7 +50,8 @@ function App() {
         <Route path='/generalqns' element={<GeneralQns/>}/>
         <Route path='/generalexam' element={<GeneralExam/>}/>
         <Route path='/examresults' element={<Result/>}/>
-        
+        <Route path='/usercontrols' element={<UserControls/>}/>
+        <Route path='/manageaccounts' element={<ManageAccount/>}/>
       </Routes >
      
   

@@ -1,6 +1,7 @@
 import React from 'react'
 import dpcut from '../assets/dpcut.jpeg'
 import './userPopup.css'
+import { Link } from 'react-router-dom'
 
 function UserPopup({ popup, setPopup, setIsPopup }) {
     const handleClosePopup = () => {
@@ -27,21 +28,27 @@ function UserPopup({ popup, setPopup, setIsPopup }) {
                         <span style={{ fontSize: '13px' }}>{userDetails.department}</span>
                     </div>
                     <div className="manage-account mt-3">
-                        <button className='border border-primary border-2 text-white rounded-4 px-3 py-1 bg-black'>Manage your account</button>
+                        <Link to={'/manageaccounts'}><button className='border border-primary border-2 text-white rounded-4 px-3 py-1 bg-black'>Manage your account</button></Link>
                     </div>
                     {/* <hr /> */}
                 </div>
                 <div className="info-body mt-3">
 
-                    <div className=' ps-2 exm-history  py-2' role='button'>
-                        <li className=''>Exam History</li>
-                    </div>
-                    <div className=' ps-2 results  py-2' role='button'>
-                        <li className=''>Results</li>
-                    </div>
-                    <div className=' ps-2 performance py-2' role='button'>
-                        <li className=''>Performance</li>
-                    </div>
+                    <Link to={'/usercontrols'} className='text-decoration-none fw-semibold text-light'>
+                        <div className=' ps-2 exm-history  py-2' role='button' >
+                            <li className=''>Exam History</li>
+                        </div>
+                    </Link>
+                    <Link to={'/usercontrols'} className='text-decoration-none fw-semibold text-light'>
+                        <div className=' ps-2 results  py-2' role='button' >
+                            <li className=''>Results</li>
+                        </div>
+                    </Link>
+                    <Link to={'/usercontrols'} className='text-decoration-none fw-semibold text-light'>
+                        <div className=' ps-2 performance py-2' role='button' >
+                            <li className=''>Performance</li>
+                        </div>
+                    </Link>
                     
                 </div>
                 <div className="info-footer my-auto text-center py-3">

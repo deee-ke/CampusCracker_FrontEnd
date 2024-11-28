@@ -2,5 +2,6 @@
     "editor.inlineSuggest.enabled": false,
     "editor.inlineSuggest.suppressSuggestions": true,
     "C_Cpp.suggestSnippets": false,
-    "vsintellicode.modify.editor.suggestSelection": "disabled"
+    "vsintellicode.modify.editor.suggestSelection": "disabled",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

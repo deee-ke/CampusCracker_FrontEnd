@@ -1,7 +1,9 @@
 import React from 'react'
-import dpcut from '../assets/dpcut.jpeg'
+// import dpcut from '../assets/dpcut.jpeg'
 import './userPopup.css'
 import { Link } from 'react-router-dom'
+import userImg from '../assets/default-avatar-icon-of-social-media-user-vector.jpg'
+import { BASE_URL } from '../services/baseurl'
 
 function UserPopup({ popup, setPopup, setIsPopup }) {
     const handleClosePopup = () => {
@@ -18,9 +20,9 @@ function UserPopup({ popup, setPopup, setIsPopup }) {
     return (
         <div className="user-popup-container ">
             <div className='user-popup'>
-                <div className="info-header text-center ">
-                    <div className="profile-picture">
-                        <img className='rounded-5' src={dpcut} width={'60px'} alt="profile" />
+                <div className="info-header text-center">
+                    <div className="profile-picture mx-auto">
+                        <img src={userDetails.profileimg?`${BASE_URL}/uploads/${userDetails.profileimg}` : userImg}  alt="profile" />
                     </div>
                     <div className="name-email mt-3 d-flex flex-column">
                         <h6 className='fw-bold m-0'>{userDetails.fullname}</h6>

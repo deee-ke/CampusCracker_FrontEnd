@@ -7,11 +7,11 @@ import Footer from '../components/Footer'
 
 function Landingpage() {
   return (
-    <> 
+    <div className='px-5 py-3'> 
     <Header/>
-      <div className="container gap-5 d-flex align-items-center mb-3" >
+      <div className=" gap-5 d-flex align-items-center mb-3" >
         <div className="img">
-          <img src={learning} alt="" height={'475px'} />
+          <img src={learning} alt="" height={'455px'} />
         </div>
         <div className="desc-btn">
           <p style={{fontSize:"25px",textAlign:'justify'}} className=''>CampusCracker is an innovative and comprehensive platform designed to revolutionize the way students prepare for campus placements and competitive exams. Tailored specifically for students of MES College of Engineering, Kuttipuram.</p>
@@ -24,7 +24,7 @@ function Landingpage() {
         </div>
       </div>
       <Footer/>
-    </> 
+    </div> 
   )
 }
 

@@ -18,7 +18,11 @@ function Header() {
   return (
     <div className='header p-3 row'>
       <div className="col-md-3"></div>
-      <div className='col-md-6'><Title /></div>
+
+      <div className='col-md-6 d-flex align-items-center justify-content-center'>
+        <Title />
+      </div>
+
       <div className="head-controls col-md-3 d-flex justify-content-around align-items-center">
         {token&&<div className={isPopup?"userfocus p-2 px-3 rounded-5 ms-auto me-2 d-flex flex-column":"user  p-2 px-3  rounded-5 ms-auto me-2 d-flex flex-column "} onClick={togglePopup}>
           <i className="fa-solid fa-user fs-4"></i>

@@ -1,3 +1,29 @@
-.footer {
-    background-color: #D1D1D1;
+
+.footer{
+    background-color: #FFF4DE;
+    border-radius: 20px;
+}
+
+.foot-icon img{
+    width: 46px;
+    height: 46px;
+}
+
+.foot-credits{
+    color: #1E1E1E;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.credits{
+    color: #1E1E1E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.brandname{
+    font-family: "Karantina", system-ui !important;
+    font-weight: 600 !important;
+    color: #0E0E0E;
+    font-size: 17px;
 }

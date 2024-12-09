@@ -16,12 +16,13 @@ function Home() {
 
 
   return (
-    <>
-    <Header/>
-    <UserPopup/>
-      <div className="home container my-5 " >
+    <div className='px-5 py-3'>
+    
+      <Header/>
 
-      
+      <UserPopup/>
+
+      <div className="home container my-5 " >
 
         <div className='row mt-5'>
           <div className="col-md-12 d-flex justify-content-center">
@@ -90,8 +91,9 @@ function Home() {
         </div>
 
       </div>
+
       <Footer/>
-    </>
+    </div>
   )
 }
 
